@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Devinema</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <style>
+            body {
+                background-color: rgb(138, 129, 239);
+            }
+
+            h1 {
+                color: rgb(249, 245, 0);
+                font-size: clamp(4.75em, 1em + 3vw,2.5em);
+                font-family: 'Fredericka the Great', cursive;
+            }
+
+            #carousel-cinema .carousel-inner,#carousel-cinema .carousel-item {
+                height: 70vh;
+            }
+
+            .carousel-inner img {
+                min-height: 200px;
+            }
+
+            .row {
+                padding-left: 10px;
+            }
+
+            .row h2 {
+                color: rgb(249, 245, 0);
+                font-family: 'Fredericka the Great', cursive;
+                margin-top: 32px;
+                margin-bottom: 32px;
+                text-align: center;
+                font-size: clamp(2.75em, 1em + 3vw,2.5em);
+            }
+
+            .card img {
+                margin-bottom: 32px;
+                height: 500px;
+            }
+
+            .card-text {
+                height: 342px;
+            }
+
+            .card-img-overlay {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .btn {
+                cursor: pointer;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="text-center">
+            <h1>Devinema</h1>
+        </div>
+    </header>
+    <div id="carousel-cinema"class="carousel carousel-fade slide g-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img class="d-block w-100" src="https://www.shoppingcidadedasflores.com.br/wp-content/uploads/sites/244/2022/10/quem-e-adao-negro-3.png">
+                <div class="carousel-caption">
+                    <h2>Adão Negro</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="https://disneyplusbrasil.com.br/wp-content/uploads/2022/06/Mundo-Estranho-Poster.jpg">
+                <div class="carousel-caption">
+                    <h2>Mundo Estranho</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="https://www.atoupeira.com.br/wp-content/uploads/2022/10/os-suburbanos-poster-critica.jpg">
+                <div class="carousel-caption">
+                    <h2>Os Suburbanos</h2>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="https://www.atoupeira.com.br/wp-content/uploads/2022/10/halloween-ends-poster-final-critica.jpg">
+                <div class="carousel-caption">
+                    <h2>Halloween Ends</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-cinema" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-cinema" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-cinema" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-cinema" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-cinema" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#carousel-cinema" data-bs-slide-to="3"></button>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Filmes em Cartaz</h2>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://www.shoppingcidadedasflores.com.br/wp-content/uploads/sites/244/2022/10/quem-e-adao-negro-3.png" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Adão Negro</h4>
+                    <h5 class="card-subtitle">Filme - Ação</h5>
+                    <p></p>
+                    <p class="card-text">
+                        Adão Negro foi consumido por poderes mágicos e transformado em um feiticeiro. Grande inimigo de Shazam! nas HQs, apesar dele acreditar em seu pontecial e, inclusive, oferecê-lo como um guerreiro do bem, Adão Negro acaba usando suas habilidades especiais para o mal.
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2022/06/Mundo-Estranho-Poster.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Mundo Estranho</h4>
+                    <h5 class="card-subtitle">Filme - Aventura</h5>
+                    <p></p>
+                    <p class="card-text">
+                        A família Clade não é muito igual as outras. Eles são exploradores que desbravam novas terras e estão em uma missão para explorar um mundo estranho e não conhecido vamos juntos ver e conhecer mais sobre este mundo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://www.atoupeira.com.br/wp-content/uploads/2022/10/os-suburbanos-poster-critica.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Os Suburbanos</h4>
+                    <h5 class="card-subtitle">Filme - Comédia</h5>
+                    <p></p>
+                    <p class="card-text">
+                        No fim dos anos 2000, o suburbano Jeferson de Souza faz de tudo para encontrar o sucesso como cantor em uma banda de pagode. Tendo que se dividir entre limpar a piscina do dono de uma gravadora, ter um caso tórrido com a esposa dele, se meter em uma rebelião na cadeia, e receber a notícia que será pai.
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://www.atoupeira.com.br/wp-content/uploads/2022/10/halloween-ends-poster-final-critica.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Halloween Ends</h4>
+                    <h5 class="card-subtitle">Filme - Terror</h5>
+                    <p></p>
+                    <p class="card-text">
+                        Em Halloween Ends, quatro anos após os eventos de Halloween Kills: O Terror Continua (2021), Laurie (Jamie Lee Curtis) agora vive com sua neta Allyson e está terminando seu livro de memórias. Michael Myers nunca mais foi visto. Até Agora...
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://i0.wp.com/otageek.com.br/wp-content/uploads/2022/09/Amsterdam-novo-Poster.jpg?resize=692%2C1024&ssl=1" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Amsterdam</h4>
+                    <h5 class="card-subtitle">Filme - Suspense</h5>
+                    <p></p>
+                    <p class="card-text">
+                        Amsterdam é ambientado na década de 1930 e conta a história de uma grande amizade e um assassinato que pode ameaçar a vida dos protagonistas e abalar toda uma sociedade. A trama policial segue três amigos íntimos: dois soldados e uma enfermeira (Christian Bale, John David Washington e Margot Robbie), que fizeram um pacto no passado, de sempre se protegerem enquanto trio, não importa o que aconteça
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card text-bg-dark">
+                <img src="https://i.ytimg.com/vi/RJ2E0Sn7Oqc/maxresdefault.jpg" alt="">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">Avatar 2 - O caminho da Água</h4>
+                    <h5 class="card-subtitle">Filme - Fantasia</h5>
+                    <p></p>
+                    <p class="card-text">
+                        “Jake Sully vive com sua nova família formada no planeta Pandora. Uma vez que uma ameaça familiar retorna para terminar o que foi iniciado anteriormente, Jake deve trabalhar com Neytiri e o exército da raça Na'vi para proteger seu planeta"
+                    </p>
+                    <a href="#" class="btn btn-primary">Assistir Filme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
